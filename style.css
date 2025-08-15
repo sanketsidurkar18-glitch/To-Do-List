@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Delius&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-fluid {
+  height: 100vh;
+  background-color: rgb(61, 0, 0);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.form {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.searchBox {
+  width: 400px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgb(230, 226, 39);
+  padding: 1rem;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Delius", cursive;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 0 0 0.8rem;
+}
+
+.searchBox::placeholder {
+  color: rgb(194, 190, 190);
+  font-size: 1.2rem;
+}
+
+.addBtn {
+  border: none;
+  background-color: transparent;
+  margin: 0 0.8rem 0 0;
+}
+
+.addBtn i {
+  color: yellow;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.taskContainer {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0.8rem;
+  background: linear-gradient(
+    90deg,
+    #ff0644,
+    #c000ff,
+    #0070f0,
+    #c000ff,
+    #ff0644
+  );
+  animation: growShadow 2s infinite ease-in-out;
+}
+
+@keyframes growShadow {
+  0% {
+    box-shadow: 0 0 10px rgba(81, 235, 76, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(81, 235, 76, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(81, 235, 76, 0.8);
+  }
+}
+
+.pendingTask,
+.completedTask {
+  width: 450px;
+  height: auto;
+  background-color: transparent;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px black;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  animation: TaskgrowShadow 2s infinite ease-in-out;
+}
+
+@keyframes TaskgrowShadow {
+  0% {
+    box-shadow: 0 0 10px rgba(110, 230, 11, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(110, 230, 11, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(110, 230, 11, 0.8);
+  }
+}
+
+.completedTask h3 {
+  color: greenyellow;
+}
+
+.pendingUl,
+.completedUl {
+  list-style: none;
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+
+.listitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  padding: 0 0.8rem 0 0.8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  color: white;
+  font-family: "Delius", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.listitems:last-child {
+  margin-bottom: 5px;
+}
+
+.listBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pendingText,
+.completeText {
+  width: 300px;
+  font-size: 1.4rem;
+  line-height: 30px;
+  margin-right: 0.8rem;
+  word-wrap: break-word; /* Old name, still works */
+  overflow-wrap: break-word; /* Modern standard */
+  white-space: normal; /* Allows wrapping */
+  flex: 1;
+}
+
+.listBtns button {
+  border: none;
+  background-color: transparent;
+}
+
+.listBtns i {
+  font-size: 1.6rem;
+}
+
+.pendingDeleteAll,
+.completeDeleteAll {
+  float: right;
+  margin-right: 17px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(238, 29, 29);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.pendingDeleteAll:hover,
+.completeDeleteAll:hover {
+  background-color: rgb(238, 29, 29);
+  border: none;
+  color: white;
+  box-shadow: 0 0 1px rgb(238, 29, 29);
+}
+
+.deleteBtn i {
+  color: white;
+}
+
+.checkBtn i {
+  color: greenyellow;
+}

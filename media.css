@@ -1,0 +1,75 @@
+@media (max-width: 575.98px) {
+  .searchBox {
+    width: 340px;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .addBtn {
+    margin: 0 0.2rem 0 0;
+  }
+
+  .container-fluid {
+    height: 100vh;
+    background-color: rgb(46, 14, 14);
+  }
+
+  .box {
+    background: linear-gradient(
+      180deg,
+      #ff0644,
+      #c000ff,
+      #c000ff,
+      #c000ff,
+      #ff0644
+    );
+  }
+
+  .searchBox::placeholder {
+    font-size: 1rem;
+  }
+
+  .form {
+    width: 95%;
+    position: relative;
+  }
+
+  .taskContainer {
+    margin-top: 1.5rem;
+  }
+
+  .addBtn {
+    position: absolute;
+    right: 2px;
+    top: auto;
+  }
+
+  .addBtn i {
+    font-size: 1.8rem;
+  }
+
+  .taskContainer {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .pendingTask,
+  .completedTask {
+    width: 310px;
+    padding: 0.5rem;
+  }
+
+  .pendingText,
+  .completeText {
+    width: 150px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-right: 0.8rem;
+    word-wrap: break-word; /* Old name, still works */
+    overflow-wrap: break-word; /* Modern standard */
+    white-space: normal; /* Allows wrapping */
+    flex: 1;
+  }
+}
