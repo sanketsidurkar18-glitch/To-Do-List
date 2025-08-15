@@ -1,0 +1,81 @@
+@media (max-width: 575.98px) {
+  .searchBox {
+    width: 280px;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    margin: 0;
+    box-shadow: none;
+    padding-right: 0;
+  }
+
+  .form {
+    width: 320px;
+    box-shadow: 0 0 10px rgb(230, 226, 39);
+    position: relative;
+    gap: 0;
+    justify-content: left;
+    align-items: center;
+    padding-top: 0;
+    border-radius: 10px;
+  }
+
+  .addBtn {
+    margin: 0 0.2rem 0 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+  }
+
+  .addBtn i {
+    font-size: 1.7rem;
+  }
+
+  .container-fluid {
+    height: 100vh;
+    background-color: rgb(46, 14, 14);
+  }
+
+  .box {
+    background: linear-gradient(
+      180deg,
+      #ff0644,
+      #c000ff,
+      #c000ff,
+      #c000ff,
+      #ff0644
+    );
+    padding: 0 10px 0 10px;
+  }
+
+  .searchBox::placeholder {
+    font-size: 1rem;
+  }
+
+  .taskContainer {
+    margin-top: 1.5rem;
+  }
+
+  .taskContainer {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .pendingTask,
+  .completedTask {
+    width: 310px;
+    padding: 0.5rem;
+  }
+
+  .pendingText,
+  .completeText {
+    width: 150px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-right: 0.8rem;
+    word-wrap: break-word; /* Old name, still works */
+    overflow-wrap: break-word; /* Modern standard */
+    white-space: normal; /* Allows wrapping */
+    flex: 1;
+  }
+}
